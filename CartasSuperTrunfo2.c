@@ -25,4 +25,7 @@ int main () {
     printf("Area: %s\n", area);
     printf("Pib: %s\n", pib);
     printf("Pontos Turisticos: %d", pontos_turisticos);
+
+    system("pause");
+    return 0;
 }
