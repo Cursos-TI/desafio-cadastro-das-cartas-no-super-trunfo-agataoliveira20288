@@ -1,20 +1,113 @@
 
-// Desafio Super Trunfo - Países
-// Tema 1 - Cadastro das Cartas
-// Este código inicial serve como base para o desenvolvimento do sistema de cadastro de cartas de cidades.
-// Siga os comentários para implementar cada parte do desafio.
-//Teste larissa
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+#include <string.h>
 
-    // Sugestão: Defina variáveis separadas para cada atributo da cidade.
-    // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
+int main () {
+    setlocale(LC_ALL,"pt_BR.UTF-8");
     
-    // Cadastro das Cartas:
-    // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
-    // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
-    
-    // Exibição dos Dados das Cartas:
-    // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
-    // Exiba os valores inseridos para cada atributo da cidade, um por linha.
+    char estado;
+    int numero_carta;
+    char nome_da_cidade[15], bt[10];
+    int populacao, pontos_turisticos;
+    float area, pib;
+    char km[] = "km²";
 
+    printf("\n");
+    printf("***Bem vindo(a) ao jogo Super Trunfo!***\n");
+    printf("Vamos começar inserindo os dados da primeira carta\n\n");
+
+    //Entrada dos dados.
+    printf("Digite o seu estado (De A á H): ");
+    scanf(" %c", &estado);
+    
+    printf("Digite o número da carta (De 1 á 8): ");
+    scanf(" %d", &numero_carta);
+
+    getchar();
+
+    printf("Digite o nome da cidade: ");
+    fgets(nome_da_cidade, 15, stdin);
+    nome_da_cidade[strcspn(nome_da_cidade, "\n")] = '\0';
+
+    printf("Digite a população da sua cidade: ");
+    scanf(" %d", &populacao);
+
+    printf("Digite a área da sua cidade: ");
+    scanf("%f", &area);
+
+    printf("Digite o PIB da sua cidade: ");
+    scanf(" %f", &pib);
+
+    getchar();
+
+    printf("O pib da sua cidade é em Milhões, bilhões ou trilhões? ");
+    fgets(bt, 10, stdin);
+    bt[strcspn(bt, "\n")] = '\0';
+
+    printf("Quantos ponto turísticos tem na sua cidade? ");
+    scanf("%d", &pontos_turisticos);
+
+    //Exibição.
+    printf("\n***Exibição das cartas***\n");
+    printf("Carta: 1\n");
+    printf("Estado: %c\n", estado);
+    printf("Código da carta: %c0%d\n", estado, numero_carta);
+    printf("Cidade: %s\n", nome_da_cidade);
+    printf("População: %d\n", populacao);
+    printf("Área: %.2f%s \n", area, km);
+    printf("Pib: %.2f %s\n", pib, bt);
+    printf("Número de pontos turísticos: %d\n", pontos_turisticos);
+
+    //Entrada dos dados 2.
+    printf("\nAgora vamos inserir os dados da carta 2\n");
+
+    printf("\nDigite o seu estado (De A á H): ");
+    scanf(" %c", &estado);
+    
+    printf("Digite o número da carta (De 1 á 8): ");
+    scanf(" %d", &numero_carta);
+
+    getchar();
+
+    printf("Digite o nome da cidade: ");
+    fgets(nome_da_cidade, 15, stdin);
+    nome_da_cidade[strcspn(nome_da_cidade, "\n")] = '\0';
+
+    printf("Digite a população da sua cidade: ");
+    scanf(" %d", &populacao);
+
+    printf("Digite a área da sua cidade: ");
+    scanf("%f", &area);
+
+    printf("Digite o PIB da sua cidade: ");
+    scanf(" %f", &pib);
+
+    getchar();
+
+    printf("O pib da sua cidade é em Milhões, bilhões ou trilhões? ");
+    fgets(bt, 10, stdin);
+    bt[strcspn(bt, "\n")] = '\0';
+
+    printf("Quantos ponto turísticos tem na sua cidade? ");
+    scanf("%d", &pontos_turisticos);
+
+    //Exibição 2.
+    printf("\n***Exibição das cartas 2***\n");
+    printf("Carta: 2\n");
+    printf("Estado: %c\n", estado);
+    printf("Código da carta: %c0%d\n", estado, numero_carta);
+    printf("Cidade: %s\n", nome_da_cidade);
+    printf("População: %d\n", populacao);
+    printf("Área: %.2f%s \n", area, km);
+    printf("Pib: %.2f %s\n", pib, bt);
+    printf("Número de pontos turísticos: %d\n", pontos_turisticos);
+
+    printf("\nFim da exibição\n");
+
+    system("pause");
+    return 0;
+}
 
 
