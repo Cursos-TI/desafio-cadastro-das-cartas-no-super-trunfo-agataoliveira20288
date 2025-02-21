@@ -6,7 +6,8 @@
 
 int main () {
     setlocale(LC_ALL,"pt_BR.UTF-8");
-    
+
+    //Variáveis    
     char estado;
     int numero_carta;
     char nome_da_cidade[15], bt[10];
@@ -105,6 +106,10 @@ int main () {
     printf("Número de pontos turísticos: %d\n", pontos_turisticos);
 
     printf("\nFim da exibição\n");
+
+    /* obs: tive problemas para escrever o código aqui então escrevi no vscode de desktop 
+    depois passei o código para cá. Espero que não tenha problema. Também vi alguns vídeos 
+    para aprender a limpar buffer e tentar colocar o idioma em português. Aguardando o feedback :-}. */
 
     system("pause");
     return 0;
