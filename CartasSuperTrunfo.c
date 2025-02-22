@@ -106,7 +106,7 @@ int main () {
     printf("Pib: %.2f %s\n", pib, bt);
     printf("Número de pontos turísticos: %d\n", pontos_turisticos);
 
-    printf("\nFim da exibição\n");
+    printf("\n***Fim da exibição***\n");
 
     /* obs: tive problemas para escrever o código aqui então escrevi no vscode de desktop 
     depois passei o código para cá. Espero que não tenha problema. Também vi alguns vídeos 
