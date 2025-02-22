@@ -17,7 +17,7 @@ int main () {
 
     printf("\n");
     printf("***Bem vindo(a) ao jogo Super Trunfo!***\n");
-    printf("Neste jogo super trunfo iremos colocar os dados de duas cartas.");
+    printf("Neste jogo super trunfo iremos colocar os dados de duas cartas");
     printf("Vamos começar inserindo os dados da primeira carta\n\n");
 
     //Entrada dos dados.
