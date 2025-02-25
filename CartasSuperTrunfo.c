@@ -39,33 +39,35 @@ int main () {
     printf("Digite a área da sua cidade: ");
     scanf("%f", &area);
 
-    printf("Digite o PIB da sua cidade: ");
-    scanf(" %f", &pib);
+    while (getchar() != '\n');
 
-    getchar();
+    printf("Digite o PIB da sua cidade: ");
+    scanf("%f", &pib);
+
+    while (getchar() != '\n');
 
     printf("O pib da sua cidade é em Milhões, bilhões ou trilhões? ");
     fgets(bt, 10, stdin);
     bt[strcspn(bt, "\n")] = '\0';
 
     printf("Quantos ponto turísticos tem na sua cidade? ");
-    scanf("%d", &pontos_turisticos);
+    scanf(" %d", &pontos_turisticos);
+    while (getchar() != '\n');
 
     //Exibição.
-    printf("\n***Exibição das cartas1***\n");
+    printf("\n***Exibição das cartas 1***\n");
     printf("Carta: 1\n");
     printf("Estado: %c\n", estado);
     printf("Código da carta: %c0%d\n", estado, numero_carta);
     printf("Cidade: %s\n", nome_da_cidade);
     printf("População: %d\n", populacao);
-    printf("Área: %.2f%s \n", area, km);
+    printf("Área: %.2f %s \n", area, km);
     printf("Pib: %.2f %s\n", pib, bt);
     printf("Número de pontos turísticos: %d\n", pontos_turisticos);
 
     //Entrada dos dados 2.
-    printf("\nAgora vamos inserir os dados da carta 2\n");
-
-    printf("\nDigite o seu estado (De A á H): ");
+    printf("\nAgora vamos inserir os dados da carta 2\n\n");
+    printf("Digite o seu estado (De A á H): ");
     scanf(" %c", &estado);
     
     printf("Digite o número da carta (De 1 á 8): ");
@@ -83,17 +85,20 @@ int main () {
     printf("Digite a área da sua cidade: ");
     scanf("%f", &area);
 
-    printf("Digite o PIB da sua cidade: ");
-    scanf(" %f", &pib);
+    while (getchar() != '\n');
 
-    getchar();
+    printf("Digite o PIB da sua cidade: ");
+    scanf("%f", &pib);
+
+    while (getchar() != '\n');
 
     printf("O pib da sua cidade é em Milhões, bilhões ou trilhões? ");
     fgets(bt, 10, stdin);
     bt[strcspn(bt, "\n")] = '\0';
 
     printf("Quantos ponto turísticos tem na sua cidade? ");
-    scanf("%d", &pontos_turisticos);
+    scanf(" %d", &pontos_turisticos);
+    while (getchar() != '\n');
 
     //Exibição 2.
     printf("\n***Exibição das cartas 2***\n");
@@ -102,7 +107,7 @@ int main () {
     printf("Código da carta: %c0%d\n", estado, numero_carta);
     printf("Cidade: %s\n", nome_da_cidade);
     printf("População: %d\n", populacao);
-    printf("Área: %.2f%s \n", area, km);
+    printf("Área: %.2f %s \n", area, km);
     printf("Pib: %.2f %s\n", pib, bt);
     printf("Número de pontos turísticos: %d\n", pontos_turisticos);
 
@@ -115,5 +120,3 @@ int main () {
     system("pause");
     return 0;
 }
-
-
