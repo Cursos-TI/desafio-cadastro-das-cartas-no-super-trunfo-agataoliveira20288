@@ -139,6 +139,8 @@ int main () {
 
     printf("\n***Fim da exibição***\n");
 
+    //Densidade Populacional e PIB per capta calculado
+
     system("pause");
     return 0;
 }
