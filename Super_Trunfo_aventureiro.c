@@ -19,10 +19,10 @@ int main () {
 
     printf("\n");
     printf("***Bem vindo(a) ao jogo Super Trunfo!***\n");
-    printf("Neste jogo super trunfo iremos colocar os dados de duas cartas");
+    printf("Neste jogo super trunfo iremos colocar os dados de duas cartas e calcular a densidade populacional e o PIB per capta");
     printf("Vamos começar inserindo os dados da primeira carta\n\n");
 
-    //Entrada dos dados.
+    //Entrada dos dados
     printf("Digite o seu estado (De A á H): ");
     scanf(" %c", &estado);
     
@@ -59,7 +59,7 @@ int main () {
     densidade_populacional = (float)populacao /area;
     PIB_per_capta = (float)pib / populacao;
 
-    //Exibição.
+    //Exibição
     printf("\n***Exibição das cartas 1***\n");
     printf("Carta: 1\n");
     printf("Estado: %c\n", estado);
@@ -116,7 +116,7 @@ int main () {
     densidade_populacional_2 = (float)populacao_2 / area2;
     PIB_per_capta_2 = (float)pib2 / populacao_2;
 
-    //Exibição 2.
+    //Exibição 2
     printf("\n***Exibição das cartas 2***\n");
     printf("Carta: 2\n");
     printf("Estado: %c\n", estado);
