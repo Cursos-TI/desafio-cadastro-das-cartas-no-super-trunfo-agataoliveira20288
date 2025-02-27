@@ -21,38 +21,33 @@ int main () {
     printf("Vamos começar inserindo os dados da primeira carta\n\n");
 
     //Entrada dos dados.
-    printf("Digite o seu estado (De A á H): ");
-    scanf(" %c", &estado);
+    printf("Digite o seu estado (De A á H): \n");
+    scanf("%c", &estado);
     
-    printf("Digite o número da carta (De 1 á 8): ");
-    scanf(" %d", &numero_carta);
+    printf("Digite o número da carta (De 1 á 8): \n");
+    scanf("%d", &numero_carta);
+
+    printf("Digite o nome da cidade: \n");
+    fgets(nome_da_cidade, 15, stdin);
 
     getchar();
 
-    printf("Digite o nome da cidade: ");
-    fgets(nome_da_cidade, 15, stdin);
-    nome_da_cidade[strcspn(nome_da_cidade, "\n")] = '\0';
+    printf("Digite a população da sua cidade: \n");
+    scanf("%d", &populacao);
 
-    printf("Digite a população da sua cidade: ");
-    scanf(" %d", &populacao);
-
-    printf("Digite a área da sua cidade: ");
+    printf("Digite a área da sua cidade: \n");
     scanf("%f", &area);
 
-    while (getchar() != '\n');
-
-    printf("Digite o PIB da sua cidade: ");
+    printf("Digite o PIB da sua cidade: \n");
     scanf("%f", &pib);
 
-    while (getchar() != '\n');
-
-    printf("O pib da sua cidade é em Milhões, bilhões ou trilhões? ");
+    printf("O pib da sua cidade é em Milhões, bilhões ou trilhões? \n");
     fgets(bt, 10, stdin);
-    bt[strcspn(bt, "\n")] = '\0';
 
-    printf("Quantos ponto turísticos tem na sua cidade? ");
+    getchar();
+
+    printf("Quantos ponto turísticos tem na sua cidade? \n");
     scanf(" %d", &pontos_turisticos);
-    while (getchar() != '\n');
 
     //Exibição.
     printf("\n***Exibição das cartas 1***\n");
