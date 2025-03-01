@@ -70,8 +70,6 @@ int main() {
     fgets(nome2, sizeof(nome2), stdin);
     nome2[strcspn(nome2, "\n")] = '\0';
 
-    while (getchar() != '\n');
-
     printf("Digite o código da sua cidade de (1 á 8): \n");
     fgets(codigo2, 3, stdin);
     codigo2[strcspn(codigo2, "\n")] = '\0';
